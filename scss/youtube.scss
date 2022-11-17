@@ -1,0 +1,13 @@
+@import 'variables';
+body{
+    background-color: $base-background;
+  
+    & p{
+      color: white;
+    }
+    
+    svg{
+        fill: red;
+        height: 2em;
+    }
+  }
