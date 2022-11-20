@@ -4,14 +4,10 @@ body {
 body .nav_container {
   margin-left: auto;
   margin-right: auto;
-  width: 98vw;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  border: 1px red solid;
+  height: 58px;
 }
 body .nav_container .nav_bar {
-  border: 1px blue solid;
+  height: 58px;
   width: 98vw;
   display: flex;
   justify-content: space-between;
@@ -19,47 +15,56 @@ body .nav_container .nav_bar {
   margin-bottom: auto;
 }
 body .nav_container .nav_bar .left_icons, body .nav_container .nav_bar .search_section, body .nav_container .nav_bar .right_icons {
+  height: 58px;
   display: flex;
   justify-content: space-evenly;
 }
 body .nav_container svg {
+  margin-top: 12px;
   width: 2em;
   height: 2em;
   fill: #fff;
 }
+body .nav_container #three_bars {
+  height: 1.5em;
+  width: 1.5em;
+  stroke: #282828;
+  stroke-width: 45px;
+  padding-right: 20px;
+}
 body .nav_container .youtube_icon svg {
-  fill: #fff;
+  fill: #FF0000;
+  background: white;
+  background-size: 100px 200px;
 }
 
 .search_section {
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
+  margin: 7px;
 }
 .search_section input {
   width: 33em;
-  height: 2.5em;
+  height: 40px;
   border: 1px white solid;
   border-radius: 10px 0 0 10px;
   color: #f1f1f1;
   font-size: 1.2em;
-  padding: 50% auto 50% 2em;
   background: none;
+  padding-left: 20px;
 }
 
 .left_icons {
-  border: 10px yellow solid outset;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  width: 200px;
-  padding-top: 50px;
+  height: 58px;
 }
 .left_icons p {
+  transform: scale(0.5, 1.25);
   font-family: sans-serif;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.33rem;
   color: #fff;
-  letter-spacing: 0px;
-  transform: scale(0.5, 1.25);
+  margin-top: 15px;
+  position: absolute;
+  margin-left: 130px;
 }/*# sourceMappingURL=youtube.css.map */
