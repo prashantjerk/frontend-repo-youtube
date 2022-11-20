@@ -1,10 +1,65 @@
 body {
-  background-color: #0f0f0f;
+  background-color: #282828;
 }
-body p {
-  color: white;
+body .nav_container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 98vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: 1px red solid;
 }
-body svg {
-  fill: red;
+body .nav_container .nav_bar {
+  border: 1px blue solid;
+  width: 98vw;
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+body .nav_container .nav_bar .left_icons, body .nav_container .nav_bar .search_section, body .nav_container .nav_bar .right_icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+body .nav_container svg {
+  width: 2em;
   height: 2em;
+  fill: #fff;
+}
+body .nav_container .youtube_icon svg {
+  fill: #fff;
+}
+
+.search_section {
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+.search_section input {
+  width: 33em;
+  height: 2.5em;
+  border: 1px white solid;
+  border-radius: 10px 0 0 10px;
+  color: #f1f1f1;
+  font-size: 1.2em;
+  padding: 50% auto 50% 2em;
+  background: none;
+}
+
+.left_icons {
+  border: 10px yellow solid outset;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 200px;
+  padding-top: 50px;
+}
+.left_icons p {
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #fff;
+  letter-spacing: 0px;
+  transform: scale(0.5, 1.25);
 }/*# sourceMappingURL=youtube.css.map */

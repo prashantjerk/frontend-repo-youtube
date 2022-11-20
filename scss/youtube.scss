@@ -1,13 +1,67 @@
 @import 'variables';
 body{
-    background-color: $base-background;
-  
-    & p{
-      color: white;
-    }
+    background-color: $almost-black;
     
-    svg{
-        fill: red;
+
+    .nav_container{
+      margin-left: auto;
+      margin-right: auto;
+      width: 98vw;
+      height: fit-content;
+      border: 1px red solid;
+      
+      .nav_bar{
+        border: 1px blue solid;
+        width: 98vw;
+        display: flex;
+        justify-content: space-between;
+        margin-top: auto;
+        margin-bottom: auto;
+
+        .left_icons, .search_section,.right_icons{
+          display: flex;
+          // border: 1px white solid;
+          justify-content: space-evenly;
+        }
+        
+      } 
+      svg{
+        width: 2em;
         height: 2em;
+        fill: $icon_color;
+      }
+      .youtube_icon svg{
+        fill: $icon_color;
+      }
     }
+
   }
+  
+.search_section{
+  max-width: max-content;
+  input{
+    width: 33em;
+    height: 2.5em;
+    border: 1px white solid;
+    border-radius:10px 0 0 10px;
+    color: $text-primary;
+    font-size: 1.2em;
+    padding: 50% auto 50% 2em;
+    background: none;
+  }
+}
+
+.left_icons{
+  border: 10px yellow solid outset;
+  height: fit-content;
+  width: 200px;
+  padding-top: 50px;
+  // padding-bottom: 50px;
+  p{
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: $icon_color;
+    letter-spacing: 0px;
+    transform: scale(0.5, 1.25);  }
+}
